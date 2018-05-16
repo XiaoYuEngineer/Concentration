@@ -8,18 +8,11 @@
 
 import Foundation
 
-struct Card : Hashable, CountableRange {
-    
-    var hashValue:Int {return identifier}
-    
-    //Equatable Protocol
-    static func == (lhs: Card, rhs: Card) -> Bool {
-        return lhs.identifier == rhs.identifier
-    }
+struct Card {
     
     var isFaceUp = false
     var isMatched = false
-    private var identifier:Int
+    var identifier:Int
     
     static var identifierFactory = 0
     
