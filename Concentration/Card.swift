@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Card : Hashable, CountableRange {
+struct Card : Hashable {
     
     var hashValue:Int {return identifier}
     
